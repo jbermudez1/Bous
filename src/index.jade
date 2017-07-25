@@ -1,0 +1,101 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title Bous
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css')
+		link(rel='stylesheet', href='./css/index.css')
+	body
+		header
+			div.container
+				div.nav-wrapper
+					div
+						img.brand-logo(src='img/logo-01.svg')
+					div.main-button.right.hide-on-med-and-down 
+						<a class="waves-effect waves-light btn">Contacta un socio</a>
+		
+		section.hero
+			div.container
+				div
+					h1 We do well, when U do well
+				div.img
+					img.responsive-img(src='img/U.png')
+				div.main-button.center.hide-on-med-and-up
+					<a class="waves-effect waves-light btn">Contacta un socio</a>
+
+		section.features
+			div.container
+				h4 Experiencia
+
+				div.feature-icon
+					img.responsive-img(src='img/u-blanca.svg')
+				div
+					img(src='img/Line.svg')
+				div.feature
+					h5 + $ 8,000 millones en 25 transacciones exitosas
+				div
+					img(src='img/Line Copy.svg') 
+				div.feature
+
+					h5 + 150x de generacíon de valor en un emprendimiento
+				div
+					img(src='img/Line Copy 2.svg') 
+
+		section.services
+			div.container 
+				h4 ¿Qué podemos hacer por ti?
+				div
+					h5.title Financiamiento público y privado 
+				div
+					h5.title Levantamiento de Capital
+				div
+					h5.title Fusiones y Adquisiciones
+				div
+					h5.title Planes estratégicos crecimiento y digitalización 
+		section.map#map mapa
+
+
+
+
+
+		footer.footer
+			div.container
+				div.flex2
+					div.brand-logo1
+						img(src="img/LOGO BOUS FINAL.svg" style="width:8em")
+						div(style="margin-top:1em; margin-bottom:1em")
+						div
+							h5 We do Well, when U do Well
+					div.forms
+						h6 Contacta a un Socio
+						div.row
+							form.col.s12
+								div.row
+									div.input-field.col.s12
+										input(type='text', name='title')
+										label(for='first_name') Nombre
+						div.row
+							form.col.s12
+								div.row
+									div.input-field.col.s12
+										input(type='text', name='title')
+										label(for='Email') Email
+						div.row
+							form.col.s12
+								div.row
+									div.input-field.col.s12
+										input(type='text', name='title')
+										label(for='message') Mensaje
+						div.button-send
+							a.waves-effect.waves-light.btn-large Enviar
+
+
+					div 
+						h6 Términos y Privacidad
+						h6 ©2017 BOUS 
+
+			div.footer-img
+				img.responsive-img(src='img/footer.jpg')

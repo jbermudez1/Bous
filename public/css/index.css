@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+body {
+  font-family: 'Gotham Pro';
+  color: #073b4b;
+  text-align: center;
+  postion: relative;
+}
+body header {
+  height: 90px;
+  -webkit-box-shadow: 10px 2px 15px #9bb1b7;
+  box-shadow: 10px 2px 15px #9bb1b7;
+}
+body header .container .nav-wrapper .main-button {
+  float: right;
+}
+body header .container .nav-wrapper .main-button a {
+  background: #d41e4a;
+}
+body section.hero {
+  padding: 10em 0;
+  height: 100%;
+  text-align: center;
+}
+body section.hero .container img {
+  right: 0;
+  top: 10em;
+  position: absolute;
+}
+body section.hero .container .main-button a {
+  background: #d41e4a;
+}
+body .features {
+  padding: 5em 0;
+  height: 650px;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  background: #073b4b;
+}
+body .features:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: #d41e4a;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -o-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+}
+body .features:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: #d41e4a;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -o-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+}
+body .services {
+  margin: 5em 0;
+}
+body .services h5 {
+  text-align: left;
+  margin: 2em 0;
+}
+body .map {
+  background: #f00;
+}
+body .footer {
+  background: #ecf0f1;
+}
+body .footer .container {
+  padding: 3em 0;
+}
+body .footer .container .button-send a {
+  background: #d41e4a;
+  padding: 0 6em;
+}
+body .footer .footer-img {
+  width: 100%;
+}

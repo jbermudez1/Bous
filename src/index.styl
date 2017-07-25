@@ -1,0 +1,94 @@
+@import 'nib'
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+$screen-sm-min = 768px;
+$screen-md-min = 992px;
+$screen-lg-min = 1200px;
+
+body
+	
+	font-family 'Gotham Pro'
+	color #073B4B
+	text-align center
+	postion relative
+
+	header 
+		height 90px
+		box-shadow 10px 2px 15px #9BB1B7
+		.container
+			.nav-wrapper
+				.main-button
+					float right
+					a
+						background #D41E4A
+	section.hero
+		padding 10em 0
+		height 100%
+		text-align center
+		.container 
+			//display flex
+			img
+				right 0
+				top 10em
+				position absolute
+			.main-button
+				a
+					background #D41E4A
+	.features
+		padding 5em 0
+		
+		height 650px
+		width 100%
+		color white
+		//padding 5em 0em
+		position relative
+		//z-index 1
+		background #073B4B
+	.features:before
+		position absolute
+		width 100%
+		height 100%
+		content ''
+		background #D41E4A
+		z-index -1
+		top 0
+		right 0
+		bottom 0
+		left 0
+		transform-origin top right
+		transform skewY(-3deg)
+	.features:after
+		position absolute
+		width 100%
+		height 100%
+		content ''
+		background #D41E4A
+		z-index -1
+		top 0
+		right 0
+		bottom 0
+		left 0
+		transform-origin top right
+		transform skewY(-3deg)
+			
+
+
+	.services
+		margin 5em 0
+		
+		h5 
+			text-align left
+			margin 2em 0
+	.map
+		background red
+	.footer
+		background #ECF0F1
+		.container
+			padding 3em 0
+			.button-send
+				a
+					background #D41E4A
+					padding 0 6em
+		.footer-img
+			width 100%
+		

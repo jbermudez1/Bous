@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="121px" height="77px" viewBox="0 0 121 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-12.5%" y="-9.0%" width="124.0%" height="123.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.812103714">
+        <g id="iPhone-7" transform="translate(-127.000000, -896.000000)" stroke-width="1.8" stroke="#FFFFFF">
+            <g id="Exp" transform="translate(-17.000000, 647.000000)">
+                <g id="Group-4" filter="url(#filter-1)" transform="translate(152.604361, 252.786791)">
+                    <polygon id="Shape" points="37.2375563 4.4408921e-16 0 4.4408921e-16 37.2375563 13.242981"></polygon>
+                    <polygon id="Shape" points="66.1965439 4.4408921e-16 103.685125 4.4408921e-16 66.1965439 13.242981"></polygon>
+                    <path d="M22.7447184,37.200214 L22.7447184,0 L37.3715383,0 L37.3715383,36.8303302 C37.3715383,47.4317605 42.7858912,52.9200357 51.7150655,52.9200357 C60.6442398,52.9200357 66.0566946,47.6174164 66.0566946,37.2944701 L66.0566946,0.000476040873 L80.6854126,0.000476040873 L80.6854126,36.7375023 C80.6854126,56.4532111 69.3812307,66.1254095 51.5243057,66.1254095 C33.6673806,66.1254095 22.7447184,56.359907 22.7447184,37.200214 Z" id="Shape" fill="#073B4B"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="88px" viewBox="0 0 58 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square" stroke-dasharray="1,1,12">
+        <g id="iPhone-7" transform="translate(-169.000000, -1222.000000)" stroke="#D6D6D6" stroke-width="5">
+            <g id="Exp" transform="translate(-17.000000, 647.000000)">
+                <path d="M189,578 C189,578 189,608.235675 189,626.950355 C189,629.875018 193.600355,635.793761 201.006342,635.793761 C201.535181,635.793761 218.021553,635.926856 233.433869,635.979207 C243.345545,636.012874 241.322484,657.698379 241.212307,659.557609" id="Line" transform="translate(215.227052, 618.778805) scale(-1, 1) translate(-215.227052, -618.778805) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
