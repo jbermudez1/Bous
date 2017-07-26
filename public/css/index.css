@@ -10,6 +10,9 @@ body header {
   -webkit-box-shadow: 10px 2px 15px #9bb1b7;
   box-shadow: 10px 2px 15px #9bb1b7;
 }
+body header .container .nav-wrapper {
+  margin-top: 2em;
+}
 body header .container .nav-wrapper .main-button {
   float: right;
 }
@@ -17,7 +20,7 @@ body header .container .nav-wrapper .main-button a {
   background: #d41e4a;
 }
 body section.hero {
-  padding: 10em 0;
+  padding: 12em 0;
   height: 100%;
   text-align: center;
 }
@@ -30,7 +33,7 @@ body section.hero .container .main-button a {
   background: #d41e4a;
 }
 body .features {
-  padding: 5em 0;
+  padding: 3em 0;
   height: 650px;
   width: 100%;
   color: #fff;
@@ -42,47 +45,71 @@ body .features:before {
   width: 100%;
   height: 100%;
   content: '';
-  background: #d41e4a;
+  background: #073b4b;
   z-index: -1;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -o-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
-  transform: skewY(-3deg);
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transform: skewY(3deg);
+  -moz-transform: skewY(3deg);
+  -o-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  border-bottom: 30px solid #d41e4a;
 }
 body .features:after {
   position: absolute;
   width: 100%;
   height: 100%;
   content: '';
-  background: #d41e4a;
+  background: #073b4b;
   z-index: -1;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
   -o-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
   transform: skewY(-3deg);
+  border-top: 30px solid #d41e4a;
 }
 body .services {
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 5em 0;
+}
+body .services .service {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
 }
 body .services h5 {
   text-align: left;
@@ -103,4 +130,24 @@ body .footer .container .button-send a {
 }
 body .footer .footer-img {
   width: 100%;
+}
+@media (max-width: $sm) {
+  header .nav-wrapper .brand-logo {
+    text-align: center;
+  }
+}
+@media (min-width: $md) {
+  .hero h1 {
+    text-align: left;
+  }
+}
+@media (min-width: $lg) {
+  .footer .container .flex2 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+  }
 }

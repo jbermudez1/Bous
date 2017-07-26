@@ -12,9 +12,9 @@ html(lang='en')
 		header
 			div.container
 				div.nav-wrapper
-					div
-						img.brand-logo(src='img/logo-01.svg')
-					div.main-button.right.hide-on-med-and-down 
+					div.logo
+						img.left.responsive-img(src='img/logo-01.svg')
+					div#nav-mobile.main-button.right.hide-on-med-and-down 
 						<a class="waves-effect waves-light btn">Contacta un socio</a>
 		
 		section.hero
@@ -44,16 +44,25 @@ html(lang='en')
 				div
 					img(src='img/Line Copy 2.svg') 
 
+
 		section.services
 			div.container 
 				h4 ¿Qué podemos hacer por ti?
-				div
+				div.service
+					div.icon
+						img.responsive-img(src='img/num-01.svg')
 					h5.title Financiamiento público y privado 
-				div
+				div.service
+					div.icon
+						img.responsive-img(src='img/num-02.svg')
 					h5.title Levantamiento de Capital
-				div
+				div.service
+					div.icon
+						img.responsive-img(src='img/num-03.svg')
 					h5.title Fusiones y Adquisiciones
-				div
+				div.service
+					div.icon
+						img.responsive-img(src='img/num-04.svg')
 					h5.title Planes estratégicos crecimiento y digitalización 
 		section.map#map mapa
 
