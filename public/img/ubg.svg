@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="692px" height="433px" viewBox="0 0 692 433" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Bouse_desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.0788609601">
+        <g id="Bous_white" transform="translate(-546.000000, -263.000000)" stroke-width="3">
+            <g id="Hero" transform="translate(0.000000, 1.000000)">
+                <g id="Group-4" transform="translate(555.000000, 264.000000)">
+                    <path d="M147.919326,241.618272 L147.919326,0 L243.044238,0 L243.044238,239.215849 C243.044238,308.072959 278.256256,343.719732 336.326768,343.719732 C394.39728,343.719732 429.596954,309.278809 429.596954,242.230473 L429.596954,0.00309192235 L524.73421,0.00309192235 L524.73421,238.612924 C524.73421,366.66798 451.217936,429.489658 335.086169,429.489658 C218.954403,429.489658 147.919326,366.061963 147.919326,241.618272 Z" id="Shape" stroke="#D41E4A"></path>
+                    <polygon id="Shape" stroke="#073B4B" points="242.172892 4.4408921e-16 0 4.4408921e-16 242.172892 86.0141879"></polygon>
+                    <polygon id="Shape" stroke="#073B4B" points="430.506458 4.4408921e-16 674.311879 4.4408921e-16 430.506458 86.0141879"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,38 +1,70 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 body {
-  font-family: 'Gotham Pro';
+  font-family: 'Open Sans', sans-serif;
   color: #073b4b;
   text-align: center;
   postion: relative;
 }
-body header {
+header {
   height: 90px;
-  -webkit-box-shadow: 10px 2px 15px #9bb1b7;
-  box-shadow: 10px 2px 15px #9bb1b7;
+  -webkit-box-shadow: 0px 2px 15px #9bb1b7;
+  box-shadow: 0px 2px 15px #9bb1b7;
 }
-body header .container .nav-wrapper {
+header .container .nav-wrapper {
   margin-top: 2em;
 }
-body header .container .nav-wrapper .main-button {
+header .container .nav-wrapper .main-button {
   float: right;
 }
-body header .container .nav-wrapper .main-button a {
+header .container .nav-wrapper .main-button a {
   background: #d41e4a;
 }
-body section.hero {
-  padding: 12em 0;
-  height: 100%;
-  text-align: center;
+section.hero {
+  background-image: url("../img/ubg.svg");
+  -webkit-background-size: 150%;
+  -moz-background-size: 150%;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: 0px bottom;
 }
-body section.hero .container img {
-  right: 0;
-  top: 10em;
-  position: absolute;
+section.hero .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  alig-items: center;
+  height: 85vh;
 }
-body section.hero .container .main-button a {
+section.hero .container p.title {
+  font-size: 2.5em;
+}
+section.hero .container >div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  alig-items: center;
+}
+section.hero .container >div a {
   background: #d41e4a;
 }
-body .features {
+.features {
   padding: 3em 0;
   height: 650px;
   width: 100%;
@@ -40,7 +72,7 @@ body .features {
   position: relative;
   background: #073b4b;
 }
-body .features:before {
+.features:before {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -63,7 +95,7 @@ body .features:before {
   transform: skewY(3deg);
   border-bottom: 30px solid #d41e4a;
 }
-body .features:after {
+.features:after {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -86,7 +118,7 @@ body .features:after {
   transform: skewY(-3deg);
   border-top: 30px solid #d41e4a;
 }
-body .services {
+.services {
   margin: 0 auto;
   text-align: center;
   display: -webkit-box;
@@ -103,7 +135,7 @@ body .services {
   flex-wrap: wrap;
   margin: 5em 0;
 }
-body .services .service {
+.services .service {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -111,43 +143,39 @@ body .services .service {
   display: box;
   display: flex;
 }
-body .services h5 {
+.services h5 {
   text-align: left;
   margin: 2em 0;
 }
-body .map {
+.map {
   background: #f00;
 }
-body .footer {
+.footer {
   background: #ecf0f1;
 }
-body .footer .container {
+.footer .container {
   padding: 3em 0;
 }
-body .footer .container .button-send a {
+.footer .container .button-send a {
   background: #d41e4a;
   padding: 0 6em;
 }
-body .footer .footer-img {
+.footer .footer-img {
   width: 100%;
 }
-@media (max-width: $sm) {
-  header .nav-wrapper .brand-logo {
-    text-align: center;
+@media (min-width: 768px) {
+  section.hero {
+    -webkit-background-size: 80%;
+    -moz-background-size: 80%;
+    background-size: 80%;
+    background-position: 190% bottom;
   }
 }
-@media (min-width: $md) {
-  .hero h1 {
-    text-align: left;
-  }
-}
-@media (min-width: $lg) {
-  .footer .container .flex2 {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
+@media (min-width: 768px) {
+  section.hero {
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    background-size: 60%;
+    background-position: 120% bottom;
   }
 }

@@ -1,123 +1,121 @@
 @import 'nib'
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+// @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-$screen-sm-min = 768px;
-$screen-md-min = 992px;
-$screen-lg-min = 1200px;
+$sm = 768px;
+$md = 992px;
+$lg = 1200px;
 
 body
 	
-	font-family 'Gotham Pro'
+	font-family: 'Open Sans', sans-serif;
 	color #073B4B
 	text-align center
 	postion relative
 
-	header 
-		height 90px
-		box-shadow 10px 2px 15px #9BB1B7
-		.container
-			.nav-wrapper
-				margin-top 2em
-				.main-button
-					float right
-					a
-						background #D41E4A
-	section.hero
-		padding 12em 0
-		height 100%
-		text-align center
-		.container 
-			//display flex
-			img
-				right 0
-				top 10em
-				position absolute
-			.main-button
-				a
-					background #D41E4A
-	.features
-		padding 3em 0 
-		
-		height 650px
-		width 100%
-		color white
-		//padding 5em 0em
-		position relative
-		//z-index 1
-		background #073B4B
-		
-		
-	.features:before
-		position absolute
-		width 100%
-		height 100%
-		content ''
-		background #073B4B
-		z-index -1
-		top 0
-		right 0
-		bottom 0
-		left 0
-		transform-origin top left
-		transform skewY(3deg)
-		border-bottom 30px solid #D41E4A
-	.features:after
-		position absolute
-		width 100%
-		height 100%
-		content ''
-		background #073B4B
-		z-index -1
-		top 0
-		right 0
-		bottom 0
-		left 0
-		transform-origin top left
-		transform skewY(-3deg)
-		border-top 30px solid #D41E4A
-			
-
-
-	.services
-		margin 0 auto
-		text-align center
-		display flex
-		flex-wrap wrap
-		margin 5em 0
-		.service
-			display flex
-		
-		h5 
-			text-align left
-			margin 2em 0
-	.map
-		background red
-	.footer
-		background #ECF0F1
-		.container
-			padding 3em 0
-			.button-send
-				a
-					background #D41E4A
-					padding 0 6em
-		.footer-img
-			width 100%
-// MEDIA QUERIES
-@media (max-width $sm)
-	header
+header 
+	height 90px
+	box-shadow 0px 2px 15px #9BB1B7
+	.container
 		.nav-wrapper
-			.brand-logo 
-				text-align center
-
-@media (min-width $md)
-	.hero
-		h1 
-			text-align left
+			margin-top 2em
+			.main-button
+				float right
+				a
+					background #D41E4A
+section.hero
+	background-image url('../img/ubg.svg')
+	background-size 150%
+	background-repeat no-repeat
+	background-position  0px bottom
+	.container 
+		display flex
+		alig-items center
+		height 85vh
+		p.title
+			font-size 2.5em
+		>div
+			display flex
+			flex-flow column
+			justify-content center
+			alig-items center
+			a
+				background #D41E4A
+.features
+	padding 3em 0 
 	
-
-@media (min-width $lg)
-	.footer
-		.container
-			.flex2
-				display flex
+	height 650px
+	width 100%
+	color white
+	//padding 5em 0em
+	position relative
+	//z-index 1
+	background #073B4B
+	
+	
+.features:before
+	position absolute
+	width 100%
+	height 100%
+	content ''
+	background #073B4B
+	z-index -1
+	top 0
+	right 0
+	bottom 0
+	left 0
+	transform-origin top left
+	transform skewY(3deg)
+	border-bottom 30px solid #D41E4A
+.features:after
+	position absolute
+	width 100%
+	height 100%
+	content ''
+	background #073B4B
+	z-index -1
+	top 0
+	right 0
+	bottom 0
+	left 0
+	transform-origin top left
+	transform skewY(-3deg)
+	border-top 30px solid #D41E4A
 		
+
+
+.services
+	margin 0 auto
+	text-align center
+	display flex
+	flex-wrap wrap
+	margin 5em 0
+	.service
+		display flex
+	
+	h5 
+		text-align left
+		margin 2em 0
+.map
+	background red
+.footer
+	background #ECF0F1
+	.container
+		padding 3em 0
+		.button-send
+			a
+				background #D41E4A
+				padding 0 6em
+	.footer-img
+		width 100%
+// MEDIA QUERIES
+@media (min-width $sm)
+	section.hero
+		background-size 80%
+		background-position 190% bottom
+
+
+@media (min-width $sm)
+	section.hero
+		background-size 60%
+		background-position 120% bottom
