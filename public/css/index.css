@@ -9,6 +9,10 @@ header {
   height: 90px;
   -webkit-box-shadow: 0px 2px 15px #9bb1b7;
   box-shadow: 0px 2px 15px #9bb1b7;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
 }
 header .container .nav-wrapper {
   margin-top: 2em;
@@ -35,12 +39,19 @@ section.hero .container {
   display: box;
   display: flex;
   alig-items: center;
-  height: 85vh;
+  height: 95vh;
 }
-section.hero .container p.title {
-  font-size: 2.5em;
+section.hero .container .slogan {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  width: 100%;
 }
-section.hero .container >div {
+section.hero .container div.title-box-lg {
+  width: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -53,24 +64,63 @@ section.hero .container >div {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
+  alig-items: center;
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -o-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  alig-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
-section.hero .container >div a {
+section.hero .container div.title-box-lg span.title-size {
+  font-size: 2.5em !important;
+}
+section.hero .container div.main-button a {
   background: #d41e4a;
 }
 .features {
-  padding: 3em 0;
-  height: 650px;
   width: 100%;
   color: #fff;
   position: relative;
   background: #073b4b;
+}
+.features .features_title .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 3em;
+  padding-top: 2em;
+}
+.features .features_title .container p {
+  font-size: 2em;
+  position: relative;
+}
+.features .features_title .container p:after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 70%;
+  right: 0;
+  width: 30%;
+  background-color: #286071;
+  height: 3px;
+}
+.features .container .text {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 .features:before {
   position: absolute;
@@ -93,7 +143,6 @@ section.hero .container >div a {
   -o-transform: skewY(3deg);
   -ms-transform: skewY(3deg);
   transform: skewY(3deg);
-  border-bottom: 30px solid #d41e4a;
 }
 .features:after {
   position: absolute;
@@ -116,7 +165,6 @@ section.hero .container >div a {
   -o-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
   transform: skewY(-3deg);
-  border-top: 30px solid #d41e4a;
 }
 .services {
   margin: 0 auto;
@@ -135,33 +183,60 @@ section.hero .container >div a {
   flex-wrap: wrap;
   margin: 5em 0;
 }
-.services .service {
+.services .service-list ul li {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: box;
   display: flex;
-}
-.services h5 {
   text-align: left;
-  margin: 2em 0;
+}
+.services .service-list ul li img {
+  padding-right: 2em;
+}
+.services .service-list ul li h5 span {
+  font-size: 0.6em;
+}
+.services .underline {
+  position: relative;
+  margin-bottom: 2em;
+}
+.services .underline:after {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 30%;
+  background-color: #e9004c;
+  height: 5px;
 }
 .map {
   background: #f00;
+  height: 40vh;
 }
 .footer {
   background: #ecf0f1;
+  text-align: left;
+  padding-bottom: 2em;
+  padding-top: 2em;
 }
-.footer .container {
-  padding: 3em 0;
-}
-.footer .container .button-send a {
-  background: #d41e4a;
-  padding: 0 6em;
-}
-.footer .footer-img {
-  width: 100%;
+.footer .flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
 }
 @media (min-width: 768px) {
   section.hero {
@@ -170,8 +245,49 @@ section.hero .container >div a {
     background-size: 80%;
     background-position: 190% bottom;
   }
+  .features .imglg img {
+    width: 70%;
+  }
+  .footer .flex {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+  }
+  .footer .flex >div {
+    width: 50%;
+  }
+  .services .service-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  .container div.title-box-lg {
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -o-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+  .container div.title-box-lg span.title-size {
+    font-size: 2.5em !important;
+  }
+}
+@media (min-width: 1200px) {
   section.hero {
     -webkit-background-size: 60%;
     -moz-background-size: 60%;

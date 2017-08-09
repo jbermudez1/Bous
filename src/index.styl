@@ -16,6 +16,10 @@ body
 header 
 	height 90px
 	box-shadow 0px 2px 15px #9BB1B7
+	position fixed
+	width 100%
+	background-color white
+	z-index 99
 	.container
 		.nav-wrapper
 			margin-top 2em
@@ -31,27 +35,55 @@ section.hero
 	.container 
 		display flex
 		alig-items center
-		height 85vh
-		p.title
-			font-size 2.5em
-		>div
+		height 95vh
+		.slogan
+			display flex
+			width 100%
+		div.title-box-lg
+			width 100%
 			display flex
 			flex-flow column
-			justify-content center
 			alig-items center
+			justify-content center
+			padding-top 1em
+			padding-bottom 1em
+			span.title-size
+				font-size 2.5em !important
+		div.main-button
 			a
 				background #D41E4A
 .features
-	padding 3em 0 
-	
-	height 650px
+	.features_title
+		.container
+			display flex
+			justify-content flex-end
+			padding-bottom 3em
+			padding-top 2em
+			p
+				font-size 2em
+				position relative
+				&:after
+					position absolute
+					content ""
+					bottom -10px
+					margin-left auto
+					margin-right auto
+					left 70%
+					right 0
+					width 30%
+					background-color #286071
+					height 3px
+	// padding 3em 0 
 	width 100%
 	color white
 	//padding 5em 0em
 	position relative
 	//z-index 1
 	background #073B4B
-	
+	.container
+		.text
+			padding-top 1.5em
+			padding-bottom 1.5em
 	
 .features:before
 	position absolute
@@ -66,7 +98,6 @@ section.hero
 	left 0
 	transform-origin top left
 	transform skewY(3deg)
-	border-bottom 30px solid #D41E4A
 .features:after
 	position absolute
 	width 100%
@@ -80,7 +111,7 @@ section.hero
 	left 0
 	transform-origin top left
 	transform skewY(-3deg)
-	border-top 30px solid #D41E4A
+	// border-top 20px solid #D41E4A
 		
 
 
@@ -90,32 +121,76 @@ section.hero
 	display flex
 	flex-wrap wrap
 	margin 5em 0
-	.service
-		display flex
-	
-	h5 
-		text-align left
-		margin 2em 0
+	.service-list
+		ul
+			li
+				display flex
+				text-align left
+				img
+					padding-right 2em
+				h5
+					span
+						font-size 0.6em
+	.underline
+		position relative
+		margin-bottom 2em
+		&:after
+			position absolute
+			content ""
+			bottom -20px
+			margin-left auto
+			margin-right auto
+			left 0
+			right 0
+			width 30%
+			background-color #E9004C
+			height 5px
 .map
 	background red
+	height 40vh
 .footer
 	background #ECF0F1
-	.container
-		padding 3em 0
-		.button-send
-			a
-				background #D41E4A
-				padding 0 6em
-	.footer-img
-		width 100%
+	text-align left
+	padding-bottom 2em
+	padding-top 2em
+	.flex
+		display flex
+		flex-flow column
+		// >div
+		// 	width 50%
+
 // MEDIA QUERIES
 @media (min-width $sm)
 	section.hero
 		background-size 80%
 		background-position 190% bottom
-
-
-@media (min-width $sm)
+	.features
+		.imglg
+			img
+				width 70%
+	.footer
+		.flex
+			flex-flow row
+			>div
+				width 50%
+	.services
+		.service-list
+			display flex
+			justify-content space-between
+@media (min-width $md)
 	section.hero
-		background-size 60%
-		background-position 120% bottom
+			// background-size 70%
+		.container 
+			div.title-box-lg
+				align-items flex-start
+				span.title-size
+					font-size 2.5em !important
+	
+
+
+
+@media (min-width $lg)
+		section.hero
+			background-size 60%
+			background-position 120% bottom
+

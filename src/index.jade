@@ -13,98 +13,120 @@ html(lang='en')
 			div.container
 				div.nav-wrapper
 					div.logo
-						img.left.responsive-img(src='img/logo-01.svg')
+						img.left.responsive-img(src='img/logo.svg')
 					div#nav-mobile.main-button.right.hide-on-med-and-down 
 						<a class="waves-effect waves-light btn">Contacta un socio</a>
 		
 		section.hero
 			div.container
-				div
-					p.title We do well, when U do well
-					//- div.img
-					//- 	img.responsive-img(src='img/U.png')
-					div.main-button.center.hide-on-med-and-up
-						a.waves-effect.waves-light.btn Contacta un socio
+				div.slogan
+					img.responsive-img(src="img/slogan.svg")
+				//- div.title-box-lg
+				//- 	span.title-size We do well,
+				//- 	br
+				//- 	span.title-size when u do well
+				//- 	br
+				//- 	div.main-button.center.hide-on-med-and-up
+				//- 		a.waves-effect.waves-light.btn Contacta un socio
 
 		section.features
-			div.container
-				h4 Experiencia
-
-				div.feature-icon
-					img.responsive-img(src='img/u-blanca.svg')
-				div
-					img(src='img/Line.svg')
-				div.feature
-					h5 + $ 8,000 millones en 25 transacciones exitosas
-				div
-					img(src='img/Line Copy.svg') 
-				div.feature
-
-					h5 + 150x de generacíon de valor en un emprendimiento
-				div
-					img(src='img/Line Copy 2.svg') 
+			div.features_title
+				.container
+					p EXPERIENCIA
+			div.container.imglg.hide-on-small-only
+				img(src="img/features-lg.svg")
+			div.container.imgsm.hide-on-med-and-up
+				img(src="img/features-sm.svg" style="width:100%")
 
 
 		section.services
 			div.container 
-				h4 ¿Qué podemos hacer por ti?
-				div.service
-					div.icon
-						img.responsive-img(src='img/num-01.svg')
-					h5.title Financiamiento público y privado 
-				div.service
-					div.icon
-						img.responsive-img(src='img/num-02.svg')
-					h5.title Levantamiento de Capital
-				div.service
-					div.icon
-						img.responsive-img(src='img/num-03.svg')
-					h5.title Fusiones y Adquisiciones
-				div.service
-					div.icon
-						img.responsive-img(src='img/num-04.svg')
-					h5.title Planes estratégicos crecimiento y digitalización 
+				h4.underline ¿Qué podemos hacer por ti?
+				div.service-list
+					ul
+						li
+							img.responsive-img(src='img/num-01.svg')
+							h5.title Financiamiento
+								br
+								span.sub público y privado 
+						li
+						
+							img.responsive-img(src='img/num-02.svg')
+							h5.title Levantamiento
+								br
+								span.sub de Capital
+					ul
+						li
+							img.responsive-img(src='img/num-03.svg')
+							h5.title Fusiones
+								br
+								span.sub y Adquisiciones
+						li
+							img.responsive-img(src='img/num-04.svg')
+							h5.title Planes estratégicos
+								br
+								span.sub crecimiento y digitalización 
 		section.map#map mapa
-
-
-
-
 
 		footer.footer
 			div.container
-				div.flex2
-					div.brand-logo1
-						img(src="img/LOGO BOUS FINAL.svg" style="width:8em")
-						div(style="margin-top:1em; margin-bottom:1em")
-						div
+				div.flex
+					div(style="display:flex;flex-flow:column;justify-content:space-between")
+						div.brand-logo1
+							img(src="img/LOGO BOUS FINAL.svg" style="width:8em")
+							br
 							h5 We do Well, when U do Well
-					div.forms
-						h6 Contacta a un Socio
-						div.row
-							form.col.s12
-								div.row
-									div.input-field.col.s12
-										input(type='text', name='title')
-										label(for='first_name') Nombre
-						div.row
-							form.col.s12
-								div.row
-									div.input-field.col.s12
-										input(type='text', name='title')
-										label(for='Email') Email
-						div.row
-							form.col.s12
-								div.row
-									div.input-field.col.s12
-										input(type='text', name='title')
-										label(for='message') Mensaje
-						div.button-send
-							a.waves-effect.waves-light.btn-large Enviar
+						div.hide-on-small-only
+							h6 Términos y Privacidad
+							h6 ©2017 BOUS 
+					div
+						div.forms
+							div.row
+								div.input-field.col.s12
+									input(type='text', name='title')
+									label(for='first_name') Nombre
+							div.row
+								div.input-field.col.s12
+									input(type='text', name='title')
+									label(for='Email') Email
+							div.row
+								div.input-field.col.s12
+									input(type='text', name='title')
+									label(for='message') Mensaje
+							div.button-send
+								a.waves-effect.waves-light.btn-large Enviar
 
 
-					div 
-						h6 Términos y Privacidad
-						h6 ©2017 BOUS 
+					
 
-			div.footer-img
-				img.responsive-img(src='img/footer.jpg')
+		div.footer-img
+			img.responsive-img(src='img/footer.jpg')
+	script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAI8ziDmHx8V9RXAgUuyaO0WicjvJ3gJZY&callback=initMap')
+	script.
+		// This example displays a marker at the center of Australia.
+		// When the user clicks the marker, an info window opens.
+		function initMap() {
+		var uluru = {lat: 19.4251783, lng: -99.1628892};
+		var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 12,
+		center: uluru
+		});
+		var contentString = '<div id="content">'+
+		'<h4 id="firstHeading" class="firstHeading">BOUS</h4>'+
+		'<div id="bodyContent">'+
+		'<p><b>Havre 77,</b> Juárez 06600, Ciudad de México, CDMX' +
+
+		'</div>'+
+		'</div>';
+		var infowindow = new google.maps.InfoWindow({
+		content: contentString
+		});
+		var marker = new google.maps.Marker({
+		position: uluru,
+		map: map,
+		title: 'Uluru (Ayers Rock)'
+		});
+		marker.addListener('click', function() {
+		infowindow.open(map, marker);
+		});
+		}
