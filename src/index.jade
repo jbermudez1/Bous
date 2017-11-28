@@ -7,6 +7,7 @@ html(lang='en')
 		title Bous
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css')
+		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
 		link(rel='stylesheet', href='./css/index.css')
 	body
 		header
@@ -15,8 +16,7 @@ html(lang='en')
 					div.logo
 						img.left.responsive-img(src='img/logo.svg')
 					div#nav-mobile.main-button.right.hide-on-med-and-down 
-						<a class="waves-effect waves-light btn">Contacta un socio</a>
-		
+						a.waves-effect.waves-light.btn(href="#contact") Contacta un socio
 		section.hero
 			div.container
 				div.slogan
@@ -65,7 +65,7 @@ html(lang='en')
 							img.responsive-img(src='img/num-04.svg')
 							h5.title Planes estratégicos
 								br
-								span.sub crecimiento y digitalización 
+								span.sub de crecimiento 
 		section.map#map mapa
 
 		footer.footer
@@ -75,38 +75,40 @@ html(lang='en')
 						div.brand-logo1
 							img(src="img/LOGO BOUS FINAL.svg" style="width:8em")
 							br
-							h5 We do Well, when U do Well
+							img.responsive-img.footer-slogan(src="img/slogan.svg")
 						div.hide-on-small-only
 							h6 Términos y Privacidad
 							h6 ©2017 BOUS 
 					div
-						div.forms
+						form.forms#contact
+							
 							div.row
 								div.input-field.col.s12
-									input(type='text', name='title')
-									label(for='first_name') Nombre
+									input(type='text', name='nombre' placeholder="Nombre" required)
+
 							div.row
 								div.input-field.col.s12
-									input(type='text', name='title')
-									label(for='Email') Email
+									input(type='email', name='mail' placeholder="Email" required)
 							div.row
 								div.input-field.col.s12
-									input(type='text', name='title')
-									label(for='message') Mensaje
-							div.button-send
-								a.waves-effect.waves-light.btn-large Enviar
+									input(type='text', name='mensaje' placeholder="Mensaje" required)
+							.progress
+								.indeterminate
+							button#enviar.btn.waves-effect.waves-light(type='submit', name='action' style="background-color:#e9004c")
+								| Enviar
+								i.material-icons.right send
 
 
 					
 
 		div.footer-img
-			img.responsive-img(src='img/footer.jpg')
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js')
 	script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAI8ziDmHx8V9RXAgUuyaO0WicjvJ3gJZY&callback=initMap')
+	script(src='index.js')
 	script.
-		// This example displays a marker at the center of Australia.
-		// When the user clicks the marker, an info window opens.
 		function initMap() {
-		var uluru = {lat: 19.4251783, lng: -99.1628892};
+		var uluru = {lat: 19.4238286, lng: -99.1622945};
 		var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 12,
 		center: uluru
@@ -114,7 +116,7 @@ html(lang='en')
 		var contentString = '<div id="content">'+
 		'<h4 id="firstHeading" class="firstHeading">BOUS</h4>'+
 		'<div id="bodyContent">'+
-		'<p><b>Havre 77,</b> Juárez 06600, Ciudad de México, CDMX' +
+		'<p><b>Córdoba 7, </b> Roma Norte, 06700 Ciudad de México.' +
 
 		'</div>'+
 		'</div>';

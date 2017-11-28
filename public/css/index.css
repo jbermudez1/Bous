@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+button {
+  outline: none !important;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   color: #073b4b;
@@ -237,6 +240,14 @@ section.hero .container div.main-button a {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
+}
+.footer .footer-slogan {
+  margin-top: 2em;
+  width: 12em;
+}
+.footer-img {
+  background-image: url("../img/footer.jpg");
+  height: 5em;
 }
 @media (min-width: 768px) {
   section.hero {
